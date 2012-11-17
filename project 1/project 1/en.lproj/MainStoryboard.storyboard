@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2840" systemVersion="12C60" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1926"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJR-S0-d4p">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="VqO-w0-wHY"/>
+                                    <constraint firstAttribute="height" constant="30" id="sss-hl-DzL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PN-dh-8rh">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="lF0-Ob-NdY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <state key="normal" title="Type your cnetid password.">
+                                    <color key="titleColor" red="0.19607843137254902" green="0.30980392156862746" blue="0.52156862745098043" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButtonToChangeLabel:" destination="2" eventType="touchUpInside" id="Jge-wX-5o6"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Fo5-AR-upJ">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="272" id="d7m-I0-EZL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="tNK-pg-td6"/>
+                                </connections>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="UChicago_RGB_MAROON.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9u8-A8-SZf">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="cLQ-Us-agJ"/>
+                                    <constraint firstAttribute="height" constant="128" id="fcG-h4-WL8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="1PN-dh-8rh" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="25a-Wp-xyy"/>
+                            <constraint firstItem="Fo5-AR-upJ" firstAttribute="top" secondItem="DJR-S0-d4p" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="3W8-YX-Twr"/>
+                            <constraint firstItem="DJR-S0-d4p" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="-95" id="5C7-ef-cWa"/>
+                            <constraint firstItem="Fo5-AR-upJ" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="6ME-uR-7A6"/>
+                            <constraint firstItem="1PN-dh-8rh" firstAttribute="top" secondItem="3" secondAttribute="top" constant="199" id="M8D-aV-yfS"/>
+                            <constraint firstItem="DJR-S0-d4p" firstAttribute="top" secondItem="3" secondAttribute="top" constant="110" id="kYy-uj-EyA"/>
+                            <constraint firstItem="9u8-A8-SZf" firstAttribute="centerX" secondItem="Fo5-AR-upJ" secondAttribute="centerX" type="default" id="qEt-VD-kam"/>
+                            <constraint firstItem="Fo5-AR-upJ" firstAttribute="trailing" secondItem="1PN-dh-8rh" secondAttribute="trailing" type="default" id="tf8-Ff-QN6"/>
+                            <constraint firstItem="9u8-A8-SZf" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-17" id="vuk-0x-wob"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="DJR-S0-d4p" id="eyX-Cj-Z9Q"/>
+                        <outlet property="passwordField" destination="Fo5-AR-upJ" id="dNP-PB-L29"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-65" y="20"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UChicago_RGB_MAROON.jpg" width="850" height="300"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="tapButtonToChangeLabel:"/>
+                <relationship kind="outlet" name="greetingLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="passwordField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

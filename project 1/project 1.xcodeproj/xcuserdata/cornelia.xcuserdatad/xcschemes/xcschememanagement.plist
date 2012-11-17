@@ -4,15 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>WorstAppEva.xcscheme</key>
+		<key>project 1.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>553386901657E5770085AF23</key>
+		<key>553386C51657FE710085AF23</key>
 		<dict>
 			<key>primary</key>
 			<true/>
